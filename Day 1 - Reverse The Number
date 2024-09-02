@@ -1,0 +1,14 @@
+#T is a variable for inserting total no of test cases 
+T=int(input("Enter test cases :"))
+#T1 is a variable to store each test case integer 
+T1=0
+#Rev is variable to store the inverse/ Reverse Value
+Rev=0
+for i in range (0,T):
+    T1=int(input(""))
+    while(T1 > 0): 
+        T2 = T1 % 10
+        Rev = Rev * 10 + T2 
+        T1 = T1 // 10
+    print(Rev)
+    Rev=0
